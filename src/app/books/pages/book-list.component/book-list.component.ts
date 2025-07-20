@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { BookStore } from '../../stores/books.store';
 import { BookCardComponent } from '../../components/book-card.component/book-card.component';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'book-list',
@@ -19,7 +19,7 @@ import { RouterLink } from '@angular/router';
       } @else {
         <ul class="book-list">
           @for (book of store.books(); track store.books()) {
-            <book-card [book]="book" />
+            <book-card [book]="book" (actionEvent)="selectBook(book.id)" (deleteEvent)="deleteBook(book.id)"/>
           }
         </ul>
       }
@@ -29,4 +29,13 @@ import { RouterLink } from '@angular/router';
 })
 export class BookListComponent {
   readonly store = inject(BookStore);
+  readonly router = inject(Router);
+
+  selectBook(id: string) {
+    this.router.navigate(['books/detail/' + id]);
+  }
+
+  deleteBook(id: string) {
+    this.store.deleteBook(id);
+  }
 }
