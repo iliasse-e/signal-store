@@ -20,5 +20,5 @@ import { Footer } from './core/components/footer/footer';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Sultanat des livres');
+  protected readonly title = signal('Koutoubia');
 }

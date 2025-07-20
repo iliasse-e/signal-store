@@ -26,10 +26,25 @@ export const BookStore = signalStore(
 
       try {
         const books = await booksService.getBooks();
-        patchState(store, {loading: false, books: books})
+        patchState(store, {loading: false, books: books});
       } catch (error) {
         patchState(store, { loading: false });
         console.error('BookStore loading error:', error);
+      } finally {
+        patchState(store, { loading: false });
+      }
+    },
+
+    async addBook(book: Book): Promise<void> {
+      patchState(store, {loading: true});
+
+      try {
+        await booksService.addBook(book);
+        const books = await booksService.getBooks();
+        patchState(store, {loading: false, books: books});
+      } catch (error) {
+        patchState(store, { loading: false });
+        console.error('BookStore saving error:', error);
       } finally {
         patchState(store, { loading: false });
       }

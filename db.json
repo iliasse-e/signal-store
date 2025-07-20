@@ -1,7 +1,7 @@
 {
   "books": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Le Petit Prince",
       "author": "Antoine de Saint-Exupéry",
       "genre": "Conte philosophique",
@@ -11,7 +11,7 @@
       "available": true
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "L'Étranger",
       "author": "Albert Camus",
       "genre": "Roman existentiel",
@@ -21,13 +21,22 @@
       "available": false
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "1984",
       "author": "George Orwell",
       "genre": "Science-fiction dystopique",
       "summary": "Dans un monde totalitaire, Winston Smith tente de résister à Big Brother et retrouver sa liberté.",
       "coverUrl": "https://example.com/1984.jpg",
       "publishedYear": 1949,
+      "available": true
+    },
+    {
+      "id": "1753026401099",
+      "title": "Le Mythe de Sisyphe",
+      "author": "Albert Camus",
+      "genre": "Essai philosophique",
+      "summary": "Camus introduit sa philosophie de l'absurde : la recherche en vain de sens de l'homme, d'unité et de clarté, dans un monde inintelligible, dépourvu, selon lui, de Dieu et par conséquent, de vérités et valeurs éternelles. Le personnage de Sisyphe incarne cette répétition mécanique de la vie, Camus en fait également un personnage tragique en raison de sa conscience. Mais cette prise de conscience de l'absurde nécessite-t-elle le suicide ? L'écrivain répond : Non, elle nécessite la révolte. ",
+      "publishedYear": 1942,
       "available": true
     }
   ]

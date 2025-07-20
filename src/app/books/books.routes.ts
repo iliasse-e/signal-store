@@ -1,9 +1,14 @@
 import { Routes } from "@angular/router";
-import { Bookspage } from "./pages/bookspage/bookspage";
+import { BookListComponent } from "./pages/book-list.component/book-list.component";
+import { BookRegistrationComponent } from "./pages/book-registration.component/book-registration.component";
 
 export const booksRoutes: Routes = [
   {
     path: '',
-    component: Bookspage
+    component: BookListComponent
+  },
+  {
+    path: 'new',
+    component: BookRegistrationComponent
   }
 ]
