@@ -1,0 +1,34 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Le Petit Prince",
+      "author": "Antoine de Saint-Exupéry",
+      "genre": "Conte philosophique",
+      "summary": "Un petit garçon venu d'une autre planète explore le monde et les adultes avec innocence et sagesse.",
+      "coverUrl": "https://example.com/le-petit-prince.jpg",
+      "publishedYear": 1943,
+      "available": true
+    },
+    {
+      "id": 2,
+      "title": "L'Étranger",
+      "author": "Albert Camus",
+      "genre": "Roman existentiel",
+      "summary": "Meursault, un homme détaché, est confronté à la société après avoir commis un meurtre.",
+      "coverUrl": "https://example.com/l-etranger.jpg",
+      "publishedYear": 1942,
+      "available": false
+    },
+    {
+      "id": 3,
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Science-fiction dystopique",
+      "summary": "Dans un monde totalitaire, Winston Smith tente de résister à Big Brother et retrouver sa liberté.",
+      "coverUrl": "https://example.com/1984.jpg",
+      "publishedYear": 1949,
+      "available": true
+    }
+  ]
+}
