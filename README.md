@@ -42,6 +42,7 @@ As the documentation says SignalStore is a fully-featured state management solut
 
 ## 📂 App's structure
 
+```
 src/
 ├── app/
 │   ├── core/        
@@ -59,6 +60,7 @@ src/
 │   └── shared/
 ├── assets/
 └── db.json         # Mocked database
+```
 
 
 
