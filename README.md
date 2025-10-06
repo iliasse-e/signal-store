@@ -21,7 +21,7 @@ The name **Koutoubia** comes from the iconic **Koutoubia Mosque** in Marrakesh, 
 
 - Angular 20
 - Signal Store
-- JSON Server
+- `JSON Server` as a mocked API server
 
 ## 🚦 Signal store
 
